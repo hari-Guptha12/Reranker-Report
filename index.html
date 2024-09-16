@@ -80,6 +80,9 @@
         padding: 0;
         margin: 0;
       }
+      th{
+        text-align: left;
+      }
       td {
         width: 200px !important;
       }
@@ -90,6 +93,13 @@
       }
       .displayblock {
         display: none !important;
+      }
+      #qbtn{
+        background-color: #d0e3ff;
+        padding: 10px 20px;
+        color:rgb(0, 0, 0);
+        width: fit-content;cursor: pointer;
+
       }
     </style>
   </head>
@@ -210,23 +220,30 @@
           />
         </div>
       </div>
+      <div style="display: flex;gap:20px">
+        <a href="#q1"><h5 id="qbtn">Question 1</h5></a>
+        <a href="#q2"><h5 id="qbtn">Question 2</h5></a>
+        <a href="#q3"><h5 id="qbtn">Question 3</h5></a>
+        <a href="#q4"><h5 id="qbtn">Question 4</h5></a>
+        <a href="#q5"><h5 id="qbtn">Question 5</h5></a>
+      </div>
       <div id="table">
         <table border="1" class="dataframe">
           <thead>
             <tr style="text-align: right">
               <th>Query</th>
-              <th>chunk</th>
-              <th>rank</th>
-              <th>minilmv2</th>
-              <th>minilmv2_Rank</th>
-              <th>electrabase</th>
-              <th>electrabase_Rank</th>
-              <th>minilmv2multilingual</th>
-              <th>minilmv2multilingual_Rank</th>
-              <th>bge</th>
-              <th>bge_Rank</th>
-              <th>jina</th>
-              <th>jina_Rank</th>
+              <th>Chunk</th>
+              <th>LLM Rank</th>
+              <th>Minilmv2</th>
+              <th>Minilmv2_Rank</th>
+              <th>Electrabase</th>
+              <th>Electrabase_Rank</th>
+              <th>Minilmv2multilingual</th>
+              <th>Minilmv2multilingual_Rank</th>
+              <th>Bge</th>
+              <th>Bge_Rank</th>
+              <th>Jina</th>
+              <th>Jina_Rank</th>
             </tr>
           </thead>
           <tbody>
@@ -245,7 +262,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr id="q1">
               <td>en</td>
               <td>Why did renewables become so cheap so fast?</td>
               <td></td>
@@ -2944,7 +2961,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr id="q2">
               <td>en</td>
               <td>What are the metrics in CRAG?</td>
               <td></td>
@@ -5687,7 +5704,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr id="q3">
               <td>en</td>
               <td>what is crag</td>
               <td></td>
@@ -8402,7 +8419,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr id="q4">
               <td>en</td>
               <td>what is KDD cup</td>
               <td></td>
@@ -10747,7 +10764,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr id="q5">
               <td>en</td>
               <td>What Is The 10-Year Treasury Yield?</td>
               <td></td>
